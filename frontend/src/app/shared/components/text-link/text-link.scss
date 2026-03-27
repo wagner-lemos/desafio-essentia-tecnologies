@@ -1,0 +1,9 @@
+@use "sass:color";
+
+.text-link {margin-top: 22px; text-align: center; width: 100%;
+
+  .label {color: #eeeeee;}
+  .link {cursor: pointer; color: #cccccc;
+    &:hover {text-decoration: underline; color: #f9f9f9}
+  }
+}

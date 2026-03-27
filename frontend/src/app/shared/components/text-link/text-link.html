@@ -1,0 +1,9 @@
+<div class="text-link" [class]="align">
+  <span class="label" *ngIf="complement">
+    {{ complement }}
+    <br /><br />
+  </span>
+  <span class="link" (click)="navigate()">
+    {{ linkText }}
+  </span>
+</div>

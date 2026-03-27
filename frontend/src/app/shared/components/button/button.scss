@@ -1,0 +1,5 @@
+.app-btn {width: 100%; padding: 14px 0; background: #111111; border: none; border-radius: 8px; color: #f9f9f9; font-size: 16px; cursor: pointer; transition: background 0.2s ease; display: flex; justify-content: center; align-items: center;
+
+    &:hover {background: #333333;}
+    &:disabled {background: #ccc; cursor: not-allowed;}
+}

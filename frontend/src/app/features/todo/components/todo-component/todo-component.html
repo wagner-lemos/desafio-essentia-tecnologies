@@ -1,0 +1,14 @@
+<app-custom-button class="logout" label="Sair" (click)="logout()" [color]="'secondary'"></app-custom-button>
+
+<div class="todo-container">         
+    <div class="todo-header">
+        <app-title text="Gerenciador de tarefas"></app-title>
+    </div>
+    <div class="todo-form">
+        <app-input-todo (add)="addTodo($event)"></app-input-todo>
+    </div>
+    
+    <div class="todo-list-container">
+        <app-todo-list [todos]="todos" (delete)="deleteTodo($event)" (toggleComplete)="toggleComplete($event.todo, $event.status)" (saveEdit)="editTodo($event.todo, $event.title)"></app-todo-list>
+    </div>
+</div>
