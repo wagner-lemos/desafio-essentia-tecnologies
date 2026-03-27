@@ -36,7 +36,7 @@ OBS: O MySQL pode demorar um pouco para subir, caso ocorra algum erro ao executa
 • Configure o environment.ts com a rota da API (Já Configurado para teste);
 • npm install
 • npm start
-• O backend iniciará na porta: 4200
+• O frontend iniciará na porta: 4200
 ```
 
 ##### Duvidas
