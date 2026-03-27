@@ -1,0 +1,19 @@
+.custom-btn {width: 100%; padding: 12px 10px; border: none; border-radius: 6px; color: #f9f9f9; font-size: 16px; cursor: pointer; transition: background 0.2s ease; display: flex; justify-content: center; align-items: center;}
+
+.primary{
+    background: #17a2b8;
+    &:hover {background: #117a8b;}
+}
+.danger{
+    background: #dc3545;
+    &:hover {background: #c82333;}
+}
+.success{
+    background: #28a745;
+    &:hover {background: #218838;}
+}
+
+.secondary{
+    background: #6c757d;
+    &:hover {background: #5a6268;}
+}

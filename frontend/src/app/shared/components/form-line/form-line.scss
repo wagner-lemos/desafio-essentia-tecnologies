@@ -1,0 +1,5 @@
+.form-line {display: flex; flex-direction: column; gap: 8px; margin-bottom: 25px; width: 100%;
+
+  label {font-size: 16px; color: #f9f9f9;}
+  ::ng-deep input {width: 100%;}
+}

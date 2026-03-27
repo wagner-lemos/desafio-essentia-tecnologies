@@ -1,0 +1,5 @@
+<form class="input-todo-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <custom-input formControlName="text" placeholder="Digite aqui sua tarefa" type="text"></custom-input>
+
+  <app-custom-button type="submit" label="Adicionar" [color]="'success'"></app-custom-button>
+</form>
