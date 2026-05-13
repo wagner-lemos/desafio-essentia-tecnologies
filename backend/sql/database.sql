@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS techx_todo;
+USE techx_todo;
+
+CREATE TABLE IF NOT EXISTS users (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(100) NOT NULL COLLATE 'latin1_swedish_ci',
+	`email` VARCHAR(100) NOT NULL COLLATE 'latin1_swedish_ci',
+	`password` VARCHAR(255) NOT NULL COLLATE 'latin1_swedish_ci',
+	`created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`) USING BTREE,
+	UNIQUE INDEX `email` (`email`) USING BTREE
+);
+
+CREATE TABLE IF NOT EXISTS tasks (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`user_id` INT(11) NOT NULL,
+	`title` VARCHAR(255) NOT NULL COLLATE 'latin1_swedish_ci',
+	`status` TINYINT(1) NOT NULL DEFAULT '0',
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `user_id` (`user_id`) USING BTREE,
+	CONSTRAINT `tasks_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON UPDATE RESTRICT ON DELETE CASCADE
+);
