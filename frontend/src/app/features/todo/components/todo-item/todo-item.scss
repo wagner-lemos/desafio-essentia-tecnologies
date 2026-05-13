@@ -1,0 +1,28 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222222;
+  padding: 5px 5px 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 9px;
+}
+
+.item-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.item-checkbox-title {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  align-items: center;
+}
+
+.edit-input{margin-right: 10px; background: #000;}
+
+::ng-deep .todo-item custom-input .custom-input {
+  padding: 10px 12px !important
+}
